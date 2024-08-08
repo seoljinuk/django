@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Item List</title>
+</head>
+<body>
+    <h1>Item List</h1>
+    <ul>
+        {% for item in movieinfo %}
+            <li>{{ item.item }}: {{ item.cnt }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
